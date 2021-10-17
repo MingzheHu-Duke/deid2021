@@ -1,3 +1,15 @@
+- [de-id](#de-id)
+- [Prerequisites](#prerequisites)
+  - [Python](#python)
+  - [Perl](#perl)
+- [Running insturctions](#running-insturctions)
+  - [Python Code](#python-code)
+    - [De-identification](#de-identification)
+    - [Stats](#stats)
+- [Homework Results](#homework-results)
+  - [Code change](#code-change)
+  - [Run & test](#run--test)
+    - [Results:](#results)
 # de-id
 Perl and Python code for de-identifying electronic medical records
 # Prerequisites
@@ -26,3 +38,236 @@ In which:
 * ```id.deid``` is the gold standard that is category-blind.
 * ```id-phi.phrase``` is the gold standard with the categories included.
 * ```phone.phi``` is the test file that the stats is run on.
+
+# Homework Results
+
+de-identify dates
+
+## Code change
+modified code for de-identify date information is stored at `./python/deid-chenbin-huang.py`  
+
+## Run & test
+Change to the python directory and   
+```
+# Run code
+python .\deid-chenbin-huang.py .\id.text date.phi
+# Test
+python stats.py id.deid id-phi.phrase date.phi
+```
+
+### Results:
+```
+==========================
+
+Num of true positives = 439
+
+Num of false positives = 245
+
+Num of false negatives = 1340
+
+Sensitivity/Recall = 0.247
+
+PPV/Specificity = 0.657
+
+==========================
+
+
+Total events in 'id-phi.phrase': 1779
+========================================
+Categories Present:
+Location
+DateYear
+Date
+HCPName
+PTName
+RelativeProxyName
+Phone
+Other
+PTNameInitial
+Age
+========================================
+
+
+
+
+
+
+Examining "Location" category.
+
+
+==========================
+
+Num of true positives = 12
+
+Num of false positives = 455
+
+Num of false negatives = 355
+
+Sensitivity/Recall = 0.033
+
+PPV/Specificity = 0.363
+
+==========================
+
+
+Examining "DateYear" category.
+
+
+==========================
+
+Num of true positives = 3
+
+Num of false positives = 462
+
+Num of false negatives = 43
+
+Sensitivity/Recall = 0.065
+
+PPV/Specificity = 0.353
+
+==========================
+
+
+Examining "Date" category.
+
+
+==========================
+
+Num of true positives = 408
+
+Num of false positives = 248
+
+Num of false negatives = 74
+
+Sensitivity/Recall = 0.846
+
+PPV/Specificity = 0.653
+
+==========================
+
+
+Examining "HCPName" category.
+
+
+==========================
+
+Num of true positives = 5
+
+Num of false positives = 459
+
+Num of false negatives = 588
+
+Sensitivity/Recall = 0.008
+
+PPV/Specificity = 0.357
+
+==========================
+
+
+Examining "PTName" category.
+
+
+==========================
+
+Num of true positives = 4
+
+Num of false positives = 460
+
+Num of false negatives = 50
+
+Sensitivity/Recall = 0.074
+
+PPV/Specificity = 0.356
+
+==========================
+
+
+Examining "RelativeProxyName" category.
+
+
+==========================
+
+Num of true positives = 2
+
+Num of false positives = 462
+
+Num of false negatives = 173
+
+Sensitivity/Recall = 0.011
+
+PPV/Specificity = 0.353
+
+==========================
+
+
+Examining "Phone" category.
+
+
+==========================
+
+Num of true positives = 5
+
+Num of false positives = 462
+
+Num of false negatives = 48
+
+Sensitivity/Recall = 0.094
+
+PPV/Specificity = 0.353
+
+==========================
+
+
+Examining "Other" category.
+
+
+==========================
+
+Num of true positives = 0
+
+Num of false positives = 462
+
+Num of false negatives = 3
+
+Sensitivity/Recall = 0.0
+
+PPV/Specificity = 0.353
+
+==========================
+
+
+Examining "PTNameInitial" category.
+
+
+==========================
+
+Num of true positives = 0
+
+Num of false positives = 462
+
+Num of false negatives = 2
+
+Sensitivity/Recall = 0.0
+
+PPV/Specificity = 0.353
+
+==========================
+
+
+Examining "Age" category.
+
+
+==========================
+
+Num of true positives = 0
+
+Num of false positives = 462
+
+Num of false negatives = 4
+
+Sensitivity/Recall = 0.0
+
+PPV/Specificity = 0.353
+
+==========================
+```
