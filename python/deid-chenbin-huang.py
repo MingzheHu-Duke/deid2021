@@ -1,6 +1,6 @@
 import re
 import sys
-date_pattern ='(?<![\/\d.])(1[0-2]|0?[1-9])\/([12][0-9]|0?3[01]|0?[1-9])(\/(19[1-9][0-9]|20[0-2][0-9]|\d\d))?(?![\/\d])'
+date_pattern ='(?<![\/\d.])(1[0-2]|0?[1-9])\/([12][0-9]|3[01]|0?[1-9])(\/(19\d\d|20[0-2][0-9]|\d\d))?(?![\/\d])'
 # pattern = (not start with number/.) (dd) / (mm) [/ (YYYY | YY) optional] (not end with another number)
 
 # ======================
