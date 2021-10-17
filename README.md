@@ -45,6 +45,7 @@ de-identify dates
 
 ## Code change
 modified code for de-identify date information is stored at `./python/deid-chenbin-huang.py`  
+Result has many "false positives", because under the current scenario, cannot easily distinguish fractions like "1/3" and data Jan 3rd without some advanced NLP techniques and the date is not stored in the format of "01/03".  
 
 ## Run & test
 Change to the python directory and   
@@ -199,18 +200,15 @@ PPV/Specificity = 0.353
 
 ==========================
 
-
 Examining "Phone" category.
 
 
 ==========================
 
-Num of true positives = 5
 
 Num of false positives = 462
 
 Num of false negatives = 48
-
 Sensitivity/Recall = 0.094
 
 PPV/Specificity = 0.353
