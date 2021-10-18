@@ -31,22 +31,22 @@ In which:
     ### De-identification Date Information
 1- Change to the python directory
 
-2- run ```python deid.py id.text phone.phi```
+2- run ```python deid-mingzhe-hu.py id.text date-mingzhe-hu.phi```
 
 In which:
 
 * ```id.text``` contains Patient Notes.
-* ```date.phi``` is the output file that will be created.
+* ```date-mingzhe-hu.phi``` is the output file that will be created.
 ### Stats Date Information
 1- change to the python directory
 
-2- run ```python stats.py id.deid id-phi.phrase date.phi ```
+2- run ```python stats.py id.deid id-phi.phrase date-mingzhe-hu.phi ```
 
 In which:
 
 * ```id.deid``` is the gold standard that is category-blind.
 * ```id-phi.phrase``` is the gold standard with the categories included.
-* ```date.phi``` is the test file that the stats is run on.  
+* ```date-mingzhe-hu.phi``` is the test file that the stats is run on.  
   
   
  ### Stats Result  
