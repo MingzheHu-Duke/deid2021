@@ -5,7 +5,7 @@ Perl and Python code for de-identifying electronic medical records
 * Python 3.5.2
 ## Perl
 * Perl 5, Version 28, Subversion 0 (v5.28.0)
-# Running insturctions
+# Running instructions
 ## Python Code
 ### De-identification Phone Information
 1- Change to the python directory
