@@ -1,0 +1,244 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@GulayBenguUlukaya 
+GulayBenguUlukaya
+/
+gulukay_deidDateYear_BMI500_Week8_assignment
+Public
+forked from cliffordlab/deid2021
+0
+015
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+gulukay_deidDateYear_BMI500_Week8_assignment/python/stats.txt
+@GulayBenguUlukaya
+GulayBenguUlukaya Add files via upload
+…
+Latest commit 228aa3d 10 hours ago
+ History
+ 1 contributor
+199 lines (94 sloc)  2.66 KB
+   
+Total events in 'id-phi.phrase': 1779
+========================================
+Categories Present:
+Location
+DateYear
+Date
+HCPName
+PTName
+RelativeProxyName
+Phone
+Other
+PTNameInitial
+Age
+========================================
+
+
+
+
+
+
+
+Examining "Location" category.
+
+
+==========================
+
+Num of true positives = 73
+
+Num of false positives = 2189
+
+Num of false negatives = 294
+
+Sensitivity/Recall = 0.199
+
+PPV/Specificity = 0.914
+
+==========================
+
+
+Examining "DateYear" category.
+
+
+==========================
+
+Num of true positives = 46
+
+Num of false positives = 2188
+
+Num of false negatives = 0
+
+Sensitivity/Recall = 1.0
+
+PPV/Specificity = 0.914
+
+==========================
+
+
+Examining "Date" category.
+
+
+==========================
+
+Num of true positives = 398
+
+Num of false positives = 2124
+
+Num of false negatives = 84
+
+Sensitivity/Recall = 0.826
+
+PPV/Specificity = 0.916
+
+==========================
+
+
+Examining "HCPName" category.
+
+
+==========================
+
+Num of true positives = 17
+
+Num of false positives = 2191
+
+Num of false negatives = 576
+
+Sensitivity/Recall = 0.029
+
+PPV/Specificity = 0.914
+
+==========================
+
+
+Examining "PTName" category.
+
+
+==========================
+
+Num of true positives = 14
+
+Num of false positives = 2189
+
+Num of false negatives = 40
+
+Sensitivity/Recall = 0.259
+
+PPV/Specificity = 0.914
+
+==========================
+
+
+Examining "RelativeProxyName" category.
+
+
+==========================
+
+Num of true positives = 9
+
+Num of false positives = 2194
+
+Num of false negatives = 166
+
+Sensitivity/Recall = 0.051
+
+PPV/Specificity = 0.914
+
+==========================
+
+
+Examining "Phone" category.
+
+
+==========================
+
+Num of true positives = 52
+
+Num of false positives = 2177
+
+Num of false negatives = 1
+
+Sensitivity/Recall = 0.981
+
+PPV/Specificity = 0.914
+
+==========================
+
+
+Examining "Other" category.
+
+
+==========================
+
+Num of true positives = 3
+
+Num of false positives = 2193
+
+Num of false negatives = 0
+
+Sensitivity/Recall = 1.0
+
+PPV/Specificity = 0.914
+
+==========================
+
+
+Examining "PTNameInitial" category.
+
+
+==========================
+
+Num of true positives = 0
+
+Num of false positives = 2194
+
+Num of false negatives = 2
+
+Sensitivity/Recall = 0.0
+
+PPV/Specificity = 0.914
+
+==========================
+
+
+Examining "Age" category.
+
+
+==========================
+
+Num of true positives = 3
+
+Num of false positives = 2194
+
+Num of false negatives = 1
+
+Sensitivity/Recall = 0.75
+
+PPV/Specificity = 0.914
+
+==========================
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
