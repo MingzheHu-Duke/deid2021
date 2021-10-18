@@ -1,5 +1,7 @@
-# de-id
-Perl and Python code for de-identifying electronic medical records
+# Week 8 Assignment: de-id of DateYear in medical records
+I have chosen to find and deidentify DateYear information in the given medical records.
+The edited deid.py and resulting accuracy statistics (stats.txt) can be found under python directory.
+
 # Prerequisites
 ## Python
 * Python 3.5.2
