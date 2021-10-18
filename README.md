@@ -2,6 +2,23 @@
 I have chosen to find and deidentify DateYear information in the given medical records.
 The edited deid.py and resulting accuracy statistics (stats.txt) can be found under python directory.
 
+Examining "DateYear" category.
+
+
+==========================
+
+Num of true positives = 46
+
+Num of false positives = 2188
+
+Num of false negatives = 0
+
+Sensitivity/Recall = 1.0
+
+PPV/Specificity = 0.914
+
+==========================
+
 # Prerequisites
 ## Python
 * Python 3.5.2
