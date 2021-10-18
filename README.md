@@ -21,7 +21,9 @@ PPV/Specificity = 0.914
 
 # Method
 Developed the following reg-ex year pattern to distinguish years as a four digit number or a two digit number that is not age:
+
 year_pattern = '((19|20)\d{2})|((?<!(age.|.is.))\d{2}(?!.y))' 
+
 Pattern looks for 19xx or 20xx or just the last two digits of the year (xx) such as 96 where the two digit number is not preceded by " is " or "age " or is not succeeded by " y" since it can say "year old", "y\. o\.", "y\.o\.", "yo", "y", "years old", "year-old", "-year-old", "years-old", "-years-old", "years of age", "yrs of age" to indicate age instead of year.
 
 # Prerequisites
